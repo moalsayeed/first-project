@@ -1,0 +1,79 @@
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --main-color:crimson;
+}
+::selection{
+    background-color: var(--main-color);
+    color:#fff;
+}
+.main-color{
+    color:var(--main-color)
+}
+
+/* ======navbar===== */
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color:var(--main-color)
+}
+.navbar-nav .nav-link{
+    transition: color 2s;
+}
+.navbar-nav .nav-link:hover{
+    color:var(--main-color);
+}
+/* =====home====== */
+#home{
+    background-image: url(../img/me.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.social-icons i{
+    transition: background-color 2s;
+}
+.social-icons i:hover{
+    background-color:var(--main-color)
+}
+
+/* =====about===== */
+
+.title h2::after{
+    content:'About us';
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bolder;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    color:#ccc;
+    letter-spacing:.5rem;
+}
+
+
+/* =======testmonial====== */
+.content img{
+    width:100px;
+}
+.carousel-indicators [data-bs-target]
+{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-size:100% 100%;
+}
+
+.carousel-indicators [data-bs-slide-to="0"]{
+    background-image: url(../img/2\ \(1\).jpg);
+}
+.carousel-indicators [data-bs-slide-to="1"]{
+    background-image: url(../img/3\ \(1\).jpg);
+}
+.carousel-indicators [data-bs-slide-to="2"]{
+    background-image: url(../img/3\ \(2\).jpg);
+}
+.carousel-indicators{
+    bottom: -100px;
+}
